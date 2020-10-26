@@ -1,0 +1,349 @@
+.sec4 {
+    height: 110vh;
+
+    background: rgb(27, 27, 27);
+    display: grid;
+    grid-template-rows: 20% 1fr;
+    row-gap: 30px;
+}
+
+.sec4 .serv-title{
+    align-self: center;
+    justify-self: center;
+
+    height: 100%;
+    width: 40%;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.sec4 .serv-title h3{
+    font-size: 35px;
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 10;
+
+    color: white;
+}
+.sec4 .serv-title h3::selection{
+    color: white;
+    background: black;
+}
+.sec4 .serv-title span::selection{
+    color: white;
+    background: black;
+}
+.sec4 .serv-title span{
+    font-family: 'Passion One', cursive;
+    font-size: 35px;
+    color: white;
+}
+
+.main .sec4 .service-container{
+    height: 100%;
+    width: 1050px;
+
+    justify-self: center;
+
+    /* flex */
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main .sec4 .service-container .service-box .learn-more{
+    height: 100%;
+    width: 99px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+/* hover */
+.main .sec4 .service-container .service-box .learn-more:hover{
+    width: 120px;
+
+}
+.main .sec4 .service-container .service-box .learn-more:hover p,
+.main .sec4 .service-container .service-box .learn-more:hover i{
+    color: #dbf159;
+
+}
+
+
+
+.main .sec4 .service-container .service-box .learn-more i{
+    color: #889733;
+
+
+
+
+}
+
+
+
+
+
+.main .sec4 .service-container .service-box .learn-more p {
+    font-family: 'Raleway', sans-serif;
+    color: #a0af4a;
+}
+
+.main .sec4 .service-container .service-box .learn-more p::selection {
+    color: white;
+    background: black;
+}
+
+
+.main .sec4 .service-container .service-box{
+    height: 450px;
+    width: 330px;
+    background: rgba(51, 51, 51);
+    
+    /* grid */
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-rows: 1fr 50px 1fr 50px;
+    align-items: center;
+    justify-items: center;
+}
+
+.main .sec4 .service-container .service-box.size{
+    height: 430px;
+}
+
+.main .sec4 .service-container .service-box .logo{
+    justify-self: center;
+    align-self: center;
+    background: #96a348;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+
+    /* flex */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .sec4 .service-container .service-box .logo i {
+    color: rgba(0, 0, 0, 0.671);
+    font-size: 30px;
+}
+
+.main .sec4 .service-container .service-box .title-box{
+    justify-self: center;
+
+}
+
+.main .sec4 .service-container .service-box .title-box h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    font-weight: 10;
+    color: white;
+}
+
+.main .sec4 .service-container .service-box .title-box h3::selection{
+    background: black;
+    color: white;
+}
+
+.main .sec4 .service-container .service-box .myp{
+    align-self: start;
+    height: 90%;
+    width: 80%;
+
+}
+.main .sec4 .service-container .service-box .myp p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: grey;
+    text-align: center;
+    line-height: 25px;
+}   
+.main .sec4 .service-container .service-box .myp p::selection{
+    background: black;
+    color: white;
+}
+
+
+/* queries */
+
+@media (max-width: 1100px) and (min-width: 991px) {
+    .sec4 {
+        height: 110vh;
+
+    
+        display: grid;
+        grid-template-rows: 20% 1fr;
+    }
+
+    .main .sec4 .service-container{
+        height: 100%;
+        width: 950px;
+   
+        justify-self: center;
+    
+        /* flex */
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .main .sec4 .service-container .service-box{
+        height: 450px;
+        width: 300px;
+   
+        /* grid */
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-rows: 1fr 50px 1fr 50px;
+        align-items: center;
+        justify-items: center;
+    }
+}
+
+ @media (max-width: 991px) and (min-width: 806px) {
+    .sec4 {
+        height: 190vh;
+
+    
+        display: grid;
+        grid-template-rows: 10% 1fr;
+    }
+    
+ 
+
+    .main .sec4 .service-container{
+        height: 100%;
+        width: 750px;
+
+        justify-self: center;
+    
+    }
+    .main .sec4 .service-container .service-box{
+        height: 450px;
+        width: 330px;
+
+    
+        /* grid */
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-rows: 1fr 50px 1fr 50px;
+        align-items: center;
+        justify-items: center;
+    }
+}
+
+@media (max-width: 806px) and (min-width: 547px) {
+    .sec4 {
+        height: 250vh;
+
+    
+        display: grid;
+        grid-template-rows: 8% 1fr;
+        row-gap: 40px;
+    }
+    
+ 
+
+    .main .sec4 .service-container{
+        height: 100%;
+        width: 500px;
+
+        justify-self: center;
+    
+    }
+    .main .sec4 .service-container .service-box{
+        height: 400px;
+        width: 100%;
+
+    
+        /* grid */
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-rows: 1fr 50px 1fr 50px;
+        align-items: center;
+        justify-items: center;
+    }
+    .main .sec4 .service-container .service-box .myp{
+        align-self: start;
+        height: 90%;
+        width: 90%;
+        
+     
+    }
+    .main .sec4 .service-container .service-box .myp p{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 15px;
+        color: grey;
+        line-height: 28px;
+    }
+}
+
+@media (max-width: 547px) {
+    .sec4 {
+        height: 250vh;
+
+    
+        display: grid;
+        grid-template-rows: 10% 1fr;
+        row-gap: 40px;
+    }
+    
+ 
+
+    .main .sec4 .service-container{
+        height: 100%;
+        width: 90%;
+
+        justify-self: center;
+    
+    }
+    .main .sec4 .service-container .service-box{
+        height: 450px;
+        width: 100%;
+
+    
+        /* grid */
+        display: grid;
+        grid-auto-flow: row;
+        grid-template-rows: 1fr 50px 1fr 50px;
+        align-items: center;
+        justify-items: center;
+    }
+    .main .sec4 .service-container .service-box .myp{
+        align-self: start;
+        height: 90%;
+        width: 90%;
+        
+     
+    }
+    .main .sec4 .service-container .service-box .myp p{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 15px;
+        color: grey;
+        line-height: 28px;
+    }
+
+    
+.sec4 .serv-title{
+    align-self: center;
+    justify-self: center;
+
+    height: 100%;
+    width: 90%;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+}
