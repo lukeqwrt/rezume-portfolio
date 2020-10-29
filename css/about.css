@@ -394,20 +394,21 @@ display: grid;
 /* 2nd about */
 
 .main .client{
-    height: 140vh;
+    height: 110vh;
     background: rgb(27, 27, 27);
 
     /* grid */
     display: grid;
-    grid-template-rows: 20% 80%;
+    grid-template-rows: 20% 1fr;
     grid-template-columns: 1fr;
     justify-items: center;
+    row-gap: 45px;
 }
 
 .main .client .client-title{
     grid-row: 1/2;
     grid-column: 1/2;
-    height: 40%;
+    height: 100px;
     width: 400px;
     align-self: end;
 
@@ -446,10 +447,12 @@ color: white;
 
 
 .main .client .message-container{
+    justify-self: center;
+    align-self: start;
     grid-row: 2/3;
     grid-column: 1/2;
-    align-self: center;
-    height: 70%;
+   
+    height: 90%;
     width: 1100px;
 
 
@@ -528,26 +531,39 @@ left: 0;
 
 }
 
-@media (max-width: 1200px) and (min-width: 862px) {
+@media (max-width: 1200px) and (min-width: 962px) {
 
     
 .main .client{
-    height: 150vh;
+    height: 130vh;
     background: rgb(27, 27, 27);
 
     /* grid */
     display: grid;
-    grid-template-rows: 10% 90%;
+    grid-template-rows: 18% 1fr;
     grid-template-columns: 1fr;
     justify-items: center;
+    row-gap: 50px;
 }
+.main .client .client-title{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    height: 69px;
+    width: 400px;
+    align-self: end;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
     
 .main .client .message-container{
+    align-self: start;
     grid-row: 2/3;
     grid-column: 1/2;
-    align-self: center;
-    height: 70%;
+
+    height: 100%;
     width: 890px;
 
 
@@ -572,21 +588,33 @@ left: 0;
 
     
 .main .client{
-    height: 160vh;
+    height: 150vh;
     background: rgb(27, 27, 27);
 
     /* grid */
     display: grid;
-    grid-template-rows: 20% 80%;
+    grid-template-rows: 10% 1fr;
     grid-template-columns: 1fr;
     justify-items: center;
+    row-gap: 60px;
 }
+.main .client .client-title{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    height: 60px;
+    width: 400px;
+    align-self: end;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
     .main .client .message-container{
         grid-row: 2/3;
         grid-column: 1/2;
-        align-self: center;
-        height: 100%;
+        align-self: start;
+        height: 95%;
         width: 720px;
     
     
@@ -617,18 +645,7 @@ left: 0;
 
 
     
-.main .client .client-title{
-    grid-row: 1/2;
-    grid-column: 1/2;
-    height: 100%;
-    width: 400px;
-    align-self: end;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
 }
 
 @media (max-width: 775px) and (min-width: 514px) {
@@ -748,33 +765,91 @@ left: 0;
 }
 
 
-@media (max-width: 419px)  {
+@media (max-width: 419px)  and (min-width: 305px){
     .main .client{
-        height: 460vh;
+        height: 350vh;
         background: rgb(27, 27, 27);
 
         /* grid */
         display: grid;
-        grid-template-rows: 10% 90%;
+        grid-template-rows: 10% 1fr;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        align-self: center;
+        row-gap: 50px;
+    }
+    
+        .main .client .message-container{
+   
+            grid-row: 2/3;
+            grid-column: 1/2;
+            align-self:start;
+            height: 100%;
+            width: 95%;
+        
+        }
+        .main .client .message-container .text-box{
+            height: 210px;
+            width: 100%;
+              
+            display: grid;
+            grid-template-columns: 100px 55vw;
+            grid-template-rows: 1fr;
+         
+        
+        }
+        .main .client .message-container .text-box .mess{
+            grid-column: 2/3;
+            grid-row: 1/2;
+            background: rgba(51, 51, 51);
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+            position: relative;
+        }
+    
+    
+        
+    .main .client .client-title{
+        grid-row: 1/2;
+        grid-column: 1/2;
+
+        width: 90%;
+        align-self: end;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+}
+
+@media (max-width: 305px){
+    .main .client{
+        height: 450vh;
+        background: rgb(27, 27, 27);
+
+        /* grid */
+        display: grid;
+        grid-template-rows: 10% 1fr;
         grid-template-columns: 1fr;
         justify-items: center;
         align-self: center;
     }
     
         .main .client .message-container{
-
+   
             grid-row: 2/3;
             grid-column: 1/2;
             align-self:start;
-            height: 95%;
-            width: 90%;
+            height: 100%;
+            width: 95%;
         
         }
         .main .client .message-container .text-box{
             height: 210px;
             width: 100%;
-            
-        
+              
             display: grid;
             grid-template-columns: 100px 50vw;
             grid-template-rows: 1fr;
@@ -796,7 +871,7 @@ left: 0;
     .main .client .client-title{
         grid-row: 1/2;
         grid-column: 1/2;
-        height: 100%;
+        
         width: 90%;
         align-self: end;
     

@@ -4,7 +4,7 @@
 
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .sec5 .social-container {
@@ -18,7 +18,7 @@
 }
 
 .sec5 .social-container .para{
-    width: 500px;
+    width: 600px;
     
     display: flex;
     flex-direction: row;
@@ -26,12 +26,15 @@
 }
 .sec5 .social-container .para h3{
     color: gray;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 10;
 }
 
 .sec5 .social-container .para span{
  width: 2px;
  height: 100%;
  background: gray;
+ font-family: 'Raleway', sans-serif;
 }
 .social {
     display: grid;
