@@ -53,3 +53,4 @@ let letter = "";
 
     setTimeout(type, 400)
 })();
+
