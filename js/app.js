@@ -5,6 +5,7 @@ const mylist = document.querySelector('.mylist')
 const tayp = document.querySelector('.type')
 
 
+
 mybars.addEventListener('click', () => {
     if(triger2.classList.contains('fa-bars')){
         triger2.classList.remove('fa-bars')
@@ -54,3 +55,16 @@ let letter = "";
     setTimeout(type, 400)
 })();
 
+
+
+let list = document.querySelector('.mylist')
+let mylistChild = list.getElementsByTagName("a")
+
+for (let i = 0; i < mylistChild.length; i++){
+    mylistChild[i].addEventListener('click', () => {
+        list.getElementsByClassName('active')[0].classList.remove('active')
+        mylistChild[i].classList.add('active')
+    })
+
+   
+}
