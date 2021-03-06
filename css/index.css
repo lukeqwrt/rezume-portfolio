@@ -48,9 +48,9 @@ nav .mylist li {
 
 }
 
-nav .mylist li a.active {
+/* nav .mylist li a.active {
     color: #bac964;
-}
+} */
 .nav-container a {
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
@@ -287,9 +287,9 @@ top: 10vh;
        height:300px;
         transition: 0.5s;
     } 
-    .nav-container .mylist.down a.active{
+    /* .nav-container .mylist.down a.active{
         color: #bac964;
-    }
+    } */
     .nav-container .mylist.down a{
         transition: 0.3s;
         color: black;

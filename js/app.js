@@ -57,14 +57,14 @@ let letter = "";
 
 
 
-let list = document.querySelector('.mylist')
-let mylistChild = list.getElementsByTagName("a")
+// let list = document.querySelector('.mylist')
+// let mylistChild = list.getElementsByTagName("a")
 
-for (let i = 0; i < mylistChild.length; i++){
-    mylistChild[i].addEventListener('click', () => {
-        list.getElementsByClassName('active')[0].classList.remove('active')
-        mylistChild[i].classList.add('active')
-    })
+// for (let i = 0; i < mylistChild.length; i++){
+//     mylistChild[i].addEventListener('click', () => {
+//         list.getElementsByClassName('active')[0].classList.remove('active')
+//         mylistChild[i].classList.add('active')
+//     })
 
    
-}
+// }
