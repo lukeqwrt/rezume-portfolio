@@ -37,9 +37,9 @@
          
             <ul class="mylist">
                 <li><a data-page="sec1" href="#home"> Home </a></li>
-                <li><a data-page="sec2" href="#resume"> Resume </a></li>
-                <li><a data-page="sec3" href="#about"> About </a></li>
-                <li><a data-page="sec4" href="#services"> Services </a></li>
+                <li><a data-page="sec2" href="#portfolio"> Portfolio </a></li>
+                <li><a data-page="sec3" href="#resume"> Resume </a></li>
+                <li><a data-page="sec4" href="#about"> About </a></li>
                 <li><a data-page="sec5" href="#contact"> Contact </a></li>
                
                
@@ -55,13 +55,71 @@
          
             <div class="black">
                 <div class="content">
-            
                         <h3>Hello, I'm</h3>
                         <h1>Luke Sillano</h1>
                         <p class="dito">I AM A<span class="typing"></span></p>
-                        
-                
                 </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio">
+            <h3>Featured <span>Profile</span></h3>
+          
+            <ul class="tabs">
+                <li data-tab-target="#photography" class="active tab">Photography</li>
+                <li data-tab-target="#hobbies" class="tab">Hobbies</li>
+                <li data-tab-target="#skills" class="tab">Skills</li>
+                <!-- <li data-tab-target="#bts" class="tab">Bts</li> -->
+            </ul>
+            <div class="tab-content">
+                <div id="photography" data-tab-content class="photography active">
+                  <div class="photography-container">
+                      <img src="./img/filtered/grid1.jpg" alt="">
+                      <img src="./img/filtered/grid2.jpg" alt="">
+                      <img src="./img/filtered/grid3.jpg" alt="">
+                      <img src="./img/filtered/grid4.jpg" alt="">
+                      <img src="./img/filtered/grid5.jpg" alt="">
+                      <img src="./img/filtered/grid6.jpg" alt="">
+                  </div>
+                </div>
+                <div id="hobbies" data-tab-content class="hobbies">
+                    <div class="hobbies-container">
+                        <video width="320" height="240" controls>
+                            <source src="./video/rez.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                          </video>
+                        <video width="320" height="240" controls>
+                            <source src="./video/rez2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                          </video>
+                        <video width="320" height="240" controls>
+                            <source src="./video/rez3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                          </video>
+                        <video width="320" height="240" controls>
+                            <source src="./video/rez4.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                          </video>
+                        <video width="320" height="240" controls>
+                            <source src="./video/rez5.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>    
+                    </div>
+                    
+                </div>
+                <div id="skills" data-tab-content class="skills">
+                    <div class="skills-container">
+                        <img src="./img/javascript.png" alt="">
+                        <img src="./img/myhtml2.png" alt="">
+                        <img src="./img/mycss.png" alt="">
+                        <img src="./img/myfogma2.png" alt="">
+                        <img src="./img/mybootstrap.jpg" alt="">
+                        <img src="./img/php1.jpg" alt="">
+                    </div>
+                </div>
+                <!-- <div id="bts" data-tab-content class="bts">
+                    
+                </div> -->
             </div>
         </section>
 
@@ -269,7 +327,7 @@
         <section data-index="2" class="sec3" id="about">
             <div data-aos="fade-up" data-aos-duration="500" data-aos-offset="300" class="about-container">
                 <div class="myimg">
-                    <img src="./img/tiktok/PicsArt_10-26-04.54.59.jpg" alt="">
+                    <img src="./img/filtered/grid1.jpg" alt="">
                 </div>
 
                 <div class="about-content">
@@ -463,6 +521,10 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
+
+        AOS.init({
+        once:true
+    });
       </script>
     <script src="./js/app.js"></script>
 </body>

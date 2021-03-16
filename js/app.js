@@ -68,3 +68,73 @@ let letter = "";
 
    
 // }
+
+const tabs = document.querySelectorAll('[data-tab-target]')
+const tabContents = document.querySelectorAll('[data-tab-content]')
+
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    const target = document.querySelector(tab.dataset.tabTarget)
+    tabContents.forEach(tabContent => {
+      tabContent.classList.remove('active')
+    })
+    tabs.forEach(tab => {
+      tab.classList.remove('active')
+    })
+    tab.classList.add('active')
+    target.classList.add('active')
+  })
+})
+
+
+let tabHeader = document.getElementsByClassName("tab-header")[0];
+let tabIndicator = document.getElementsByClassName("tab-indicator")[0];
+let tabBody = document.getElementsByClassName("tab-body")[0];
+
+let tabsPane = tabHeader.getElementsByTagName("div")
+const photography = document.querySelector('.photography')
+const hobbies = document.querySelector('.hobbies')
+const skills = document.querySelector('.skills')
+const bts = document.querySelector('.bts')
+
+for(let i = 0; i < tabsPane.length; i++){
+    tabsPane[i].addEventListener('click', () => {
+        // tabs active
+        tabHeader.getElementsByClassName("active")[0].classList.remove('active');
+        tabsPane[i].classList.add("active");
+
+        tabBody.getElementsByClassName("active")[0].classList.remove("active");
+        tabBody.getElementsByTagName("div")[i].classList.add('active')
+
+        if(photography.classList.contains('active')){
+            document.getElementsByClassName('tabs')[0].style.height = "800px"
+        }
+        if(hobbies.classList.contains('active')){
+          document.getElementsByClassName('tabs')[0].style.height = "400px"
+        }
+        if(skills.classList.contains('active')){
+          document.getElementsByClassName('tabs')[0].style.height = "800px"
+        }
+        // if(photography.classList.contains('active')){
+        //     document.getElementsByClassName('photography')[0].style.background = "red"
+        // }
+       
+    });
+}
+
+
+
+
+
+// const tab = document.querySelectorAll('.tab');
+
+
+// tab.forEach( i => {
+//     i.addEventListener('click', () => {
+//         const tabnav = document.getElementsByClassName('tab-nav')[0];
+//         tabnav.getElementsByClassName("active")[0].classList.remove('active')
+//         i.classList.add('active');        
+//     })
+
+   
+// })

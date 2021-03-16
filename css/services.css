@@ -1,17 +1,15 @@
 .sec4 {
-    height: 110vh;
 
     background: rgb(27, 27, 27);
     display: grid;
-    grid-template-rows: 20% 1fr;
+    grid-template-rows: auto 1fr;
     row-gap: 30px;
 }
 
 .sec4 .serv-title{
     align-self: center;
     justify-self: center;
-
-    height: 100px;
+margin: 2rem 0;
     width: 40%;
 
     display: flex;

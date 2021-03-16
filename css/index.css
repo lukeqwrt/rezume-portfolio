@@ -403,4 +403,116 @@ top: 10vh;
 }
 
 /* SECTION 3 */
+.main .portfolio{
+    background: rgb(27, 27, 27);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.main .portfolio h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: lighter;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    padding-top: 7rem;
+padding-bottom: 2rem;
+}
 
+.main .portfolio span{
+    font-family: 'Passion One', cursive;
+}
+
+[data-tab-content] {
+    display: none;
+  }
+  
+  .active[data-tab-content] {
+    display: block;
+  }
+  
+  .tabs{
+      display: flex;
+      justify-content: space-around;
+      list-style: none;
+      margin: 2rem 0;
+      padding: 0;
+
+  }
+  .tabs li{
+      margin: 0 1rem;
+      font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+      color: gray;
+      transition: 0.3s;
+  }
+  .tabs li:hover{
+    color: #bac964;
+    transition: 0.3s;
+  }
+  .tab{
+      cursor: pointer;
+      padding: 10px;
+  }
+
+  .tab.active{
+      
+    color: #bac964;
+
+  }
+  .main .portfolio .tab-content{
+    max-width: 1250px;
+  }
+  /* photography */
+.main .portfolio .tab-content .photography {
+
+}
+.main .portfolio .tab-content .photography .photography-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.main .portfolio .tab-content .photography .photography-container img{
+    height: 300px;
+    width: 350px;
+    margin: 0.5rem 0.5rem;
+}
+
+/* hobbies */
+
+.main .portfolio .tab-content .hobbies .hobbies-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.main .portfolio .tab-content .hobbies .hobbies-container video{
+    margin: 0.5rem 0.5rem;
+}
+/* skills */
+.main .portfolio .tab-content .skills .skills-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.main .portfolio .tab-content .skills .skills-container img{
+    height: 300px;
+    width: 350px;
+    margin: 0.5rem 0.5rem;
+}
+
+@media (max-width: 591px){
+    .tabs li{
+        margin: 0 0rem;
+        font-size: 20px;
+      font-family: 'Raleway', sans-serif;
+        color: gray;
+        transition: 0.3s;
+    }
+    /* .main .portfolio .tab-content .photography .photography-container img{
+        height: 300px;
+        width: 100%;
+        margin: 0.5rem 0.5rem;
+    } */
+}
