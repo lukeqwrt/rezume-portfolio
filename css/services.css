@@ -4,6 +4,7 @@
     display: grid;
     grid-template-rows: auto 1fr;
     row-gap: 30px;
+    padding-bottom: 70px;
 }
 
 .sec4 .serv-title{
@@ -294,6 +295,7 @@ margin: 2rem 0;
         display: grid;
         grid-template-rows: 10% 1fr;
         row-gap: 40px;
+        padding-bottom: 0px;
     }
     
  
