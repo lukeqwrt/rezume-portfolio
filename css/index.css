@@ -2,6 +2,7 @@
 @import "./contact.css";
 @import "./about.css";
 @import "./resume.css";
+@import "./projects.css";
 
 *{
     padding: 0;

@@ -1,0 +1,53 @@
+.main .projects{
+    /* height: 50vh; */
+    background: rgb(27, 27, 27);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .projects .counter-container{
+    padding: 100px 0;
+   display: flex;
+    flex-wrap: wrap;
+    align-items:flex-start;
+    justify-content: center;
+    font-family: 'Raleway', sans-serif;
+   
+}
+
+.main .projects .counter-container .card{
+
+    max-width: 260px;
+    width: 260px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 55px;
+    margin: 10px 10px;
+}
+
+.main .projects .counter-container .card p{
+    font-size: 30px;
+}
+.main .projects .counter-container .card .number{
+    padding: 22px 0;
+    font-family: 'Roboto Slab', serif;
+}
+@media screen and (max-width: 853px){
+    .main .projects .counter-container{
+     grid-template-columns: 1fr;
+     grid-template-rows: auto;
+     grid-auto-flow: row;
+    }
+    
+}
+
+@media screen and (max-width: 839px){
+    
+    .main .projects .counter-container .card{
+        margin:30px 30px;
+    }
+}

@@ -87,40 +87,67 @@ tabs.forEach(tab => {
 })
 
 
-let tabHeader = document.getElementsByClassName("tab-header")[0];
-let tabIndicator = document.getElementsByClassName("tab-indicator")[0];
-let tabBody = document.getElementsByClassName("tab-body")[0];
+// let tabHeader = document.getElementsByClassName("tab-header")[0];
+// let tabIndicator = document.getElementsByClassName("tab-indicator")[0];
+// let tabBody = document.getElementsByClassName("tab-body")[0];
 
-let tabsPane = tabHeader.getElementsByTagName("div")
-const photography = document.querySelector('.photography')
-const hobbies = document.querySelector('.hobbies')
-const skills = document.querySelector('.skills')
-const bts = document.querySelector('.bts')
+// let tabsPane = tabHeader.getElementsByTagName("div")[0];
+// const photography = document.querySelector('.photography')
+// const hobbies = document.querySelector('.hobbies')
+// const skills = document.querySelector('.skills')
+// const bts = document.querySelector('.bts')
 
-for(let i = 0; i < tabsPane.length; i++){
-    tabsPane[i].addEventListener('click', () => {
-        // tabs active
-        tabHeader.getElementsByClassName("active")[0].classList.remove('active');
-        tabsPane[i].classList.add("active");
+// for(let i = 0; i < tabsPane.length; i++){
+//     tabsPane[i].addEventListener('click', () => {
+//         // tabs active
+//         tabHeader.getElementsByClassName("active")[0].classList.remove('active');
+//         tabsPane[i].classList.add("active");
 
-        tabBody.getElementsByClassName("active")[0].classList.remove("active");
-        tabBody.getElementsByTagName("div")[i].classList.add('active')
+//         tabBody.getElementsByClassName("active")[0].classList.remove("active");
+//         tabBody.getElementsByTagName("div")[i].classList.add('active')
 
-        if(photography.classList.contains('active')){
-            document.getElementsByClassName('tabs')[0].style.height = "800px"
-        }
-        if(hobbies.classList.contains('active')){
-          document.getElementsByClassName('tabs')[0].style.height = "400px"
-        }
-        if(skills.classList.contains('active')){
-          document.getElementsByClassName('tabs')[0].style.height = "800px"
-        }
-        // if(photography.classList.contains('active')){
-        //     document.getElementsByClassName('photography')[0].style.background = "red"
-        // }
+//         if(photography.classList.contains('active')){
+//             document.getElementsByClassName('tabs')[0].style.height = "800px"
+//         }
+//         if(hobbies.classList.contains('active')){
+//           document.getElementsByClassName('tabs')[0].style.height = "400px"
+//         }
+//         if(skills.classList.contains('active')){
+//           document.getElementsByClassName('tabs')[0].style.height = "800px"
+//         }
+//         // if(photography.classList.contains('active')){
+//         //     document.getElementsByClassName('photography')[0].style.background = "red"
+//         // }
        
+//     });
+// }
+
+  window.addEventListener('scroll', () => {
+    
+    var reveals = document.querySelector('.projects')
+    var windowHeight =  window.innerHeight;
+    var revealTop = reveals.getBoundingClientRect().top;
+    var revealPoint = 420;
+
+    if(revealTop < windowHeight - revealPoint){
+      const numbers = document.querySelectorAll('.number');
+      numbers.forEach((num) => {
+        const incrementCounter = () => {
+            const targetNumber = +num.getAttribute('data-target-number');
+            const currentNumber = parseInt(num.innerText);
+    
+            if(currentNumber < targetNumber){
+                num.innerText = Math.floor(currentNumber + targetNumber / 100);
+                setTimeout(incrementCounter, 70)
+            }
+            else{
+                num.innerText = targetNumber.toLocaleString();
+            }
+        }
+        incrementCounter();
     });
-}
+    }
+})
 
 
 

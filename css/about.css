@@ -290,7 +290,6 @@ display: grid;
 @media (max-width: 612px)  {
 
     .main  .sec3 {
-        height: 160vh;
         background: rgb(27, 27, 27);
         width: 100%;
      
