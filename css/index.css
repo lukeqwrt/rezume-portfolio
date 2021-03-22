@@ -154,8 +154,26 @@ color: #bac964;
     font-weight: lighter;
     font-size: 65px;
     color: white;
-    
+
+
+    animation: article-load 800ms ease-in;
+    animation-fill-mode: forwards;
+    transform: translateX(-20px);
+    opacity: 1;
 }
+@keyframes article-load{
+    0%{
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+
 .sec1 .content h3::selection{
     background: black;
     color: white;
@@ -173,8 +191,22 @@ color: #bac964;
     font-family: 'Passion One', cursive;
     color: white;
     letter-spacing: 3px;
+    animation: article-load-h1 800ms ease-in;
+    animation-fill-mode: forwards;
+    transform: translateX(20px);
+    opacity: 1;
 }
+@keyframes article-load-h1{
+    0%{
+        transform: translateX(20px);
+        opacity: 0;
+    }
 
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
 .sec1 .content p{
     word-spacing: 9px;
     color: white;
