@@ -3,6 +3,7 @@
 @import "./about.css";
 @import "./resume.css";
 @import "./projects.css";
+@import "./myworks.css";
 
 *{
     padding: 0;
@@ -548,4 +549,9 @@ padding-bottom: 2rem;
         width: 100%;
         margin: 0.5rem 0.5rem;
     } */
+    .main .portfolio .tab-content .photography .photography-container img{
+        height: 300px;
+        width: 90%;
+        margin: 0.5rem 0.5rem;
+    }
 }

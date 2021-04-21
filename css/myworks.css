@@ -1,0 +1,133 @@
+.main .myworks{
+    background: rgb(27, 27, 27);
+    padding: 80px 50px;
+}
+.main .myworks .myworks-container{
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+}
+
+.main .myworks .myworks-container h3{
+    padding:20px 0;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.main .myworks .myworks-container .work-box-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.main .myworks .myworks-container .work-box-container .workBox{
+    width: 500px;
+    height: auto;
+    margin:30px auto;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    cursor: pointer;
+}
+
+.main .myworks .myworks-container .work-box-container .workBox .image{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+}
+.main .myworks .myworks-container .work-box-container .workBox .image .darkopacity{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height:100%;
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    transform-origin: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    transition: 0.3s ease;
+    transform-origin: center;
+}
+.main .myworks .myworks-container .work-box-container .workBox .image .darkopacity h4{
+    visibility: hidden;
+    opacity: 0;
+    transform-origin: center;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+}
+.main .myworks .myworks-container .work-box-container .workBox:hover .image .darkopacity{
+    visibility: visible;
+    opacity: 1;
+    height: 100%;
+    transform-origin: center;
+    width: 100%;
+    /* transform: scale(1); */
+}
+.main .myworks .myworks-container .work-box-container .workBox:hover .image .darkopacity h4{
+    visibility: visible;
+    opacity: 1;
+    animation: moveIn 0.5s ease;
+  
+}
+
+
+@keyframes moveIn {
+      
+    0%{
+        opacity: 0;
+        transform: translateX(-40px);
+    }  
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+.main .myworks .myworks-container .work-box-container .workBox .image img{
+    height: auto;
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.main .myworks .myworks-container .work-box-container .workBox .boxTitle{
+    /* background: white; */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: white;
+
+}
+.main .myworks .myworks-container .work-box-container .workBox .boxTitle h3{
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    /* margin: 0; */
+    padding: 10px;
+    text-align: left;
+    color: black;
+}
+
+@media screen and (max-width: 662px) {
+    .main .myworks{
+        padding: 80px 20px;
+    }
+    .main .myworks .myworks-container .work-box-container .workBox{
+        width: 100%;
+        height: auto;
+        margin:30px auto;
+    
+    }
+}

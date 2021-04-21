@@ -285,7 +285,7 @@
 @media (max-width: 896px) and (min-width: 591px) {
    
 .sec2 {
-    height: 400vh;
+    height: unset;
     
  background: rgb(27, 27, 27); 
     display: grid;
@@ -340,7 +340,7 @@
         padding: 0rem 0;
     }
     .sec2 {
-        height: 400vh;
+        height:unset;
         
      background: rgb(27, 27, 27); 
         display: grid;

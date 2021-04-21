@@ -6,7 +6,7 @@ const tayp = document.querySelector('.type')
 
 
 
-mybars.addEventListener('click', () => {
+triger2.addEventListener('click', () => {
     if(triger2.classList.contains('fa-bars')){
         triger2.classList.remove('fa-bars')
         triger2.classList.add('fa-close')
